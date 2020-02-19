@@ -30,7 +30,6 @@ var Person = /** @class */ (function () {
 }());
 var Student = /** @class */ (function (_super) {
     __extends(Student, _super);
-    // ②
     function Student(name, age, jobTitle, salary, jobLocation) {
         var _this = _super.call(this, name, age, jobTitle) || this;
         _this.salary = salary;
@@ -42,6 +41,6 @@ var Student = /** @class */ (function (_super) {
     };
     return Student;
 }(Person));
-var Student = new Student("Mario", "110", "programmer", "1000 euro", "Vienna");
-console.log(Student.info());
-console.log(Student.whoAreYou());
+var student = new Student("Mario", "110", "programmer", "1000 euro", "Vienna");
+console.log(student.info());
+console.log(student.whoAreYou());
