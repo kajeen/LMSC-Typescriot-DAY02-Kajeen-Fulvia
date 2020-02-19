@@ -28,22 +28,20 @@ var Person = /** @class */ (function () {
     };
     return Person;
 }());
-var Student = /** @class */ (function (_super) {
-    __extends(Student, _super);
+var Worker = /** @class */ (function (_super) {
+    __extends(Worker, _super);
     // ②
-    function Student(name, age, jobTitle, salary, jobLocation) {
+    function Worker(name, age, jobTitle, salary, jobLocation) {
         var _this = _super.call(this, name, age, jobTitle) || this;
         _this.salary = salary;
         _this.jobLocation = jobLocation;
         return _this;
     }
-    Student.prototype.whoAreYou = function () {
-        return _super.prototype.whoAreYou.call(this) + " and i get " + this.salary + " every month, and i work in " + this.jobLocation; // ⑤
+    Worker.prototype.whoAreYou = function () {
+        return _super.prototype.whoAreYou.call(this) + " and i get " + this.salary + " euro every month, and i work in " + this.jobLocation; // ⑤
     };
-    return Student;
+    return Worker;
 }(Person));
 // let Student = new Student("Mario", "110", "programmer", "3000 euro","Vienna");
-var Student = new Student("Lara", "35", "baker", "1500 euro", "London");
-console.log(Student.info());
-console.log(Student.whoAreYou());
-document.write(Student.whoAreYou());
+var Worker = new Worker("Lara", "35", "baker", 1500, "London");
+document.write(Worker.whoAreYou());

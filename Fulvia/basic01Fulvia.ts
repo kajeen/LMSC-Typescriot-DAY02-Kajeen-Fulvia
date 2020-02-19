@@ -34,7 +34,7 @@ class Worker extends Person { // ①
 }
 
 // let Student = new Student("Mario", "110", "programmer", "3000 euro","Vienna");
-let Worker = new Worker("Lara", "35", "baker", 1500 "London");
+let Worker = new Worker("Lara", "35", "baker", 1500 , "London");
 
 
 document.write(Worker.whoAreYou());
